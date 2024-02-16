@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Spring Boot MVC and Thymeleaf</title>
+</head>
+
+<body>
+	<h1>Our Heroes</h1>
+	 <ul>
+        <li th:each="item : ${items}"> <!-- 'items' is the name of your list -->
+            <span th:text="${item}"></span> <!-- Display each item in the list -->
+        </li>
+    </ul>
+</body>
+
+</html>

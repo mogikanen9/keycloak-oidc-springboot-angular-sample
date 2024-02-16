@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>My Home Page with Spring Boot MVC and Thymeleaf</title>
+</head>
+
+<body>
+	<h1>Welcome</h1>
+	<h2 th:text="${message}"></h2>
+	<h3 th:text="${username}"></h3>
+	<h3 th:text="${userDetails}"></h3>
+	<hr>
+	<h3 th:text="${fullName}"></h3>
+	<h3 th:text="${authorities}"></h3>
+	
+	<a href="/heroes">View Heroes</a>
+</body>
+
+</html>

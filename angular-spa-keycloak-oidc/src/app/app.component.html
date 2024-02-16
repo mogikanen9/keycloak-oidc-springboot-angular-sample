@@ -1,0 +1,7 @@
+<h1>Hello from SPA App</h1>
+<span *ngIf="profileFullName">
+  <p>Welcome, {{ profileFullName }}</p>
+  <a (click)="logout()">Logout</a>
+</span>
+<a *ngIf="!profileFullName" (click)="login()">Login</a>
+<router-outlet></router-outlet>

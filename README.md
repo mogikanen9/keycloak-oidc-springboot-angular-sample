@@ -1,13 +1,15 @@
 # Sample apps protected with Keycloak with OIDC
 
 ## Projects
+* `heroes-rest-api-keycloak-protected` - REST API secured as resource server using **spring-boot-starter-oauth2-resource-server** it checks for `access_to_heroes_api` scope (cleint must have it for access)
 * `webapp-keycloak-protected` - Spring MVC (Thymeleaf) app secured using **spring-boot-starter-oauth2-client**
 * `angular-spa-keycloak-protected` - Angular SPA secured using **angular-oauth2-oidc**
-* `heroes-rest-api-keycloak-protected` - REST API secured as resource server using **spring-boot-starter-oauth2-resource-server**
+* `simple-job-rest-client` - Job-like app which calls protected rest api. Uses RestTemplate from Spring and **Nimbus** library for Auth token request
 
 ## OAuth2 Flows
 * Authorization Code Flow - `webapp-keycloak-protected`
 * PKCE Authorization Code Flow - `angular-spa-keycloak-protected`
+* Client Credentials Flow - `simple-job-rest-client`
 
 ## Keycloak MyMvcWelcomeApp
 * Exported in `myrealm-keycloak-export.json`
@@ -16,3 +18,4 @@
 * Clients:
     - MyMvcWelcomeApp: secured client (confidential access type), used for `webapp-keycloak-protected` app
     - MyAngularSpaApp: public client (public access type), used for `angular-spa-keycloak-protected`app
+    - MyJobServiceRestClient: secured client (confidential access type), used for `simple-job-rest-client` app

@@ -1,2 +1,10 @@
 
 .DS_Store
+javaee-war-app-protected/.classpath
+javaee-war-app-protected/.project
+javaee-war-app-protected/.settings/org.eclipse.jdt.apt.core.prefs
+javaee-war-app-protected/.settings/org.eclipse.jdt.core.prefs
+javaee-war-app-protected/.settings/org.eclipse.m2e.core.prefs
+javaee-war-app-protected/.settings/org.eclipse.wst.common.component
+javaee-war-app-protected/.settings/org.eclipse.wst.common.project.facet.core.xml
+javaee-war-app-protected/.settings/org.eclipse.wst.validation.prefs
